@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.global-container {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container {
+    background-color: white;
+    box-shadow: 0 0 20px  darkgray;
+    display: flex;
+    padding: 3px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-container h1 {
+    text-align: center;
+}
+
+#input-task {
+    border: none;
+    box-shadow: 0 4px 0 0 purple;
+    margin: 5px;
+    width: 20rem;
+    outline: rgba(0, 255, 34, 0.363);
+    height: 1.5em;
+    transition: all 200ms linear;
+    font-size: 20px;
+}
+
+#input-task:focus {
+    box-shadow: 
+    0 2px 0 purple,
+    0 0 5px darkgray;   
+}
+
+
+#add-task-button {
+    border: none;
+    border-radius: 5px;
+    height: 2.6em;
+    margin: 0 2px;
+    padding: 5px 0.5rem;
+    background-color: rgb(197, 0, 197);
+    color: white;
+}
+
+
+#add-task-button:active {
+    background-color: rgb(155, 0, 155);
+    box-shadow: 1px 1px 1px darkgray;
+    text-shadow: 0 0 1px rgb(94, 0, 94);
+}
+
+.delete-btn {
+    border: none;
+    height: 1.55em;
+    width: 1.55em;
+    position: absolute;
+    margin: 0 10px;
+    right: 2px;
+    border-radius: 100%;
+    background-color: red;
+    color: white;
+}
+
+.delete-btn:active {
+    background-color: rgb(184, 0, 0);
+}
+
+.list-container {
+    position: relative;
+}
+
+li span, li input {
+    position: relative;
+}
+
+.list-container li {
+    margin: 2px 5px;
+    width: 400px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li span {
+    margin: 2px;
+}
+
+li {
+    padding: 0.25rem;
+}
+
+input[type="checkbox"]:checked + span {
+    text-decoration: line-through;
+}
+
